@@ -1,0 +1,249 @@
+rm -rf.git = to delete repostries
+
+
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1
+$ git init
+Initialized empty Git repository in D:/SCM/Project 1/.git/
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git config --global user.name"Anmol1407"
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git config --global user.email"anmol0212.be21@chitkara.edu.in"
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git config user.name
+anmol1407
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git config user.email
+97452657+anmol1407@users.noreply.github.com
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ ^C
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git config user.email
+97452657+anmol1407@users.noreply.github.com
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ gitconfig --global user.email"anmol0212.be21@chitkara.edu.in"
+bash: gitconfig: command not found
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git config --global user.email"anmol0212.be21@chitkara.edu.in"
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git config user.email
+97452657+anmol1407@users.noreply.github.com
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git add --a
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        comment.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git add --a
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   comment.txt.txt
+
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git -m "initial commit"
+unknown option: -m
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   comment.txt.txt
+
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git commit -m "initial commit"
+[master (root-commit) 214b952] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comment.txt.txt
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    comment.txt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        comment.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    comment.txt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bootstrap.txt
+        comment.txt
+        design.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git add --a
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    comment.txt.txt -> bootstrap.txt
+        new file:   comment.txt
+        new file:   design.txt
+
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git commit -m "improved the design of the application"
+[master da8723a] improved the design of the application
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ rename comment.txt.txt => bootstrap.txt (100%)
+ create mode 100644 comment.txt
+ create mode 100644 design.txt
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git log
+commit da8723a96e75422c4a1a7c18acdcf0cfed7894ee (HEAD -> master)
+Author: anmol1407 <97452657+anmol1407@users.noreply.github.com>
+Date:   Wed Mar 16 14:03:58 2022 +0530
+
+    improved the design of the application
+
+commit 214b9526fb3067258bfa66fd3c1bdec7fc869923
+Author: anmol1407 <97452657+anmol1407@users.noreply.github.com>
+Date:   Wed Mar 16 14:01:41 2022 +0530
+
+    initial commit
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ ^C
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git branch
+* master
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git branch activity 1
+fatal: Not a valid object name: '1'.
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git branch activity1
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git branch activity2
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ git checkout activity1
+Switched to branch 'activity1'
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (activity1)
+$ git branch
+* activity1
+  activity2
+  master
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (activity1)
+$ git status
+On branch activity1
+nothing to commit, working tree clean
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (activity1)
+$ git log
+commit da8723a96e75422c4a1a7c18acdcf0cfed7894ee (HEAD -> activity1, master, activity2)
+Author: anmol1407 <97452657+anmol1407@users.noreply.github.com>
+Date:   Wed Mar 16 14:03:58 2022 +0530
+
+    improved the design of the application
+
+commit 214b9526fb3067258bfa66fd3c1bdec7fc869923
+Author: anmol1407 <97452657+anmol1407@users.noreply.github.com>
+Date:   Wed Mar 16 14:01:41 2022 +0530
+
+    initial commit
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (activity1)
+$ git checkout master
+Switched to branch 'master'
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$ ls
+bootstrap.txt  comment.txt  design.txt
+
+Anmol@DESKTOP-5NE1G0M MINGW64 /d/SCM/Project 1 (master)
+$
